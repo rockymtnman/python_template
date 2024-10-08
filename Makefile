@@ -8,10 +8,10 @@ test:
 	# pytest -vv --junitxml=report.xml  
 
 format:	
-	black *.py */*.py
+	black *.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py src/*.py
+	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
 
 refactor: format lint
 		
